@@ -1,0 +1,405 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../../fonts/Montserrat-Light.ttf);
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '';
+  src: url(../../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '';
+  src: url(../../fonts/Montserrat-Medium.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '';
+  src: url();
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  min-width: 1140px;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+}
+
+.title__text {
+  color: #111111;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: "Montserrat";
+}
+
+.title__sub-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #7c7c7c;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+.info-text {
+  width: 355px;
+  height: 75px;
+  background-color: #ffff00;
+  position: absolute;
+  top: -80px;
+  left: -110px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 15px;
+}
+
+.line-sub {
+  width: 100%;
+  height: 4px;
+  background-color: #7c7c7c;
+  margin-bottom: 15px;
+}
+
+.analysis {
+  margin-top: 50px;
+}
+
+.covid-table {
+  margin-top: 115px;
+  margin-bottom: 100px;
+}
+
+.covid-table .info-text {
+  top: -125px;
+}
+
+.covid-table-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.covid-table-title__list {
+  text-decoration: none;
+  width: 25%;
+  border-bottom: 4px solid #7c7c7c;
+  padding-bottom: 20px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #000000;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.covid-table-title__list:hover {
+  border-color: #1a9f29;
+  color: #1a9f29;
+}
+
+.covid-table-title .active_table {
+  border-color: #1a9f29;
+  color: #1a9f29;
+}
+
+.covid-table-list {
+  margin-top: 35px;
+}
+
+.covid-table .transmission-infection {
+  border-bottom: 2px solid #7c7c7c;
+}
+
+.covid-table .transmission-infection__title-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: #7c7c7c;
+}
+
+.covid-table .transmission-infection-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.covid-table .transmission-infection-list {
+  width: 230px;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.covid-table .transmission-infection-list_text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: #7c7c7c;
+  margin-top: 25px;
+}
+
+.covid-table .transmission-infection-list:last-child {
+  margin-left: 50px;
+}
+
+.covid-table .transmission-infection_text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: #7c7c7c;
+}
+
+.covid-table .symptoms-coronavirus {
+  border-bottom: 2px solid #7c7c7c;
+}
+
+.covid-table .symptoms-coronavirus_title-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: #7c7c7c;
+  margin-bottom: 45px;
+}
+
+.covid-table .symptoms-coronavirus-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.covid-table .symptoms-coronavirus-list__text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: #7c7c7c;
+  margin-top: 25px;
+}
+
+.covid-table .symptoms-coronavirus_sub-text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: #7c7c7c;
+  margin-top: 25px;
+}
+
+.covid-table .check-item {
+  list-style: none;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: #7c7c7c;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.covid-table .check-list {
+  color: #000000;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.covid-table .check-icon {
+  margin-right: 10px;
+}
+
+.covid-table .peculiarities {
+  border-bottom: 2px solid #7c7c7c;
+}
+
+.covid-table .danger {
+  border-bottom: 2px solid #7c7c7c;
+  padding-bottom: 25px;
+}
+
+.covid-table .danger__text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: #7c7c7c;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.pass-analysis {
+  margin-top: 200px;
+}
+
+.pass-analysis-list {
+  margin-top: 40px;
+}
+
+.pass-analysis-list__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7c7c7c;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 30px;
+}
+
+.analysis-detection {
+  margin-top: 200px;
+}
+
+.analysis-detection .sup-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111111;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.analysis-detection-list__text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #474747;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.analysis-detection-list__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #474747;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 15px;
+}
+
+.analysis-detection-list__list .list__tetx {
+  margin-top: 15px;
+}
+
+.analysis-detection-list__list .list__img {
+  margin-right: 15px;
+}
+
+.shows-test {
+  margin: 200px 0;
+}
+
+.shows-test__title-text {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a9f29;
+  font-family: 'Montserrat';
+  margin-bottom: 30px;
+}
+
+.shows-test__title-text-info {
+  font-size: 16px;
+  font-weight: 500;
+  color: #474747;
+  font-family: 'Montserrat';
+}
+
+.shows-test .shows-test_right-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #474747;
+  font-family: 'Montserrat';
+}

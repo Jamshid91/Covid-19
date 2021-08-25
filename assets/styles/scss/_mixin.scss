@@ -1,0 +1,29 @@
+
+@mixin bgc($bgc, $height) {
+    background-color: $bgc;
+    max-width: 1920px;
+    height: $height;
+    margin: 0 auto;
+}
+
+@mixin display($align, $content) {
+    display: flex;
+    align-items: $align;
+    justify-content: $content;
+}
+
+@mixin display-diraction($align, $content) {
+    display: flex;
+    align-items: $align;
+    justify-content: $content;
+    flex-direction: column;
+}
+
+@mixin text($size, $font, $weight, $color) {
+    font-size: $size;
+    font-family: $font;
+    font-weight: $weight;
+    color: $color;
+    font-style: normal;
+    font-display: swap;
+}

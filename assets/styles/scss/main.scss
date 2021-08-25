@@ -1,0 +1,307 @@
+@import 'font';
+@import 'color';
+@import 'mixin';
+
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-width: 1140px;
+    position: relative;
+}
+
+
+.title {
+    text-align: center;
+    &__text {
+        color: #111111;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2;
+        font-family: "Montserrat";
+    }
+
+    &__sub-text {
+        margin-top: 20px;
+        font-size: 16px;
+        color: #7c7c7c;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.5;
+    }
+}
+
+.info-text {
+    width: 355px;
+    height: 75px;
+    background-color: #ffff00;
+    position: absolute;
+    top: -80px;
+    left: -110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 15px;
+}
+
+
+.line-sub {
+    width: 100%;
+    height: 4px;
+    background-color: #7c7c7c;
+    margin-bottom: 15px;
+}
+.analysis {
+    margin-top: 50px;
+}
+
+.covid-table {
+    margin-top: 115px;
+    margin-bottom: 100px;
+    
+    .info-text {
+        top: -125px;
+    }
+
+    &-title {
+        display: flex;
+        flex-wrap: wrap;
+        &__list {
+            text-decoration: none;
+            width: 25%;
+            border-bottom: 4px solid #7c7c7c;
+            padding-bottom: 20px;
+            font-family: "Montserrat";
+            font-weight: 700;
+            color: #000000;
+            cursor: pointer;
+            transition: .5s;
+
+            &:hover {
+                border-color: #1a9f29;
+                color: #1a9f29
+            }
+        }
+
+        .active_table {
+            border-color: #1a9f29;
+            color: #1a9f29
+        }
+    }
+
+    &-list {
+        margin-top: 35px;
+    }
+
+    // Пути передачи инфекции
+    .transmission-infection {
+        border-bottom: 2px solid #7c7c7c;
+        &__title-text {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            color: #7c7c7c;
+        }
+
+        &-item {
+            display: flex;
+            margin-top: 40px;
+        }
+        &-list {
+            width: 230px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+
+            &_text {
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'Open Sans', sans-serif;
+                color: #7c7c7c;
+                margin-top: 25px;
+            }
+
+            &:last-child {
+                margin-left: 50px;
+            }
+        }
+        &_text {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            color: #7c7c7c;     
+        }
+    }
+
+    // Симптомы коронавируса
+    .symptoms-coronavirus {
+        border-bottom: 2px solid #7c7c7c;
+        &_title-text {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            color: #7c7c7c;
+            margin-bottom: 45px;
+        }
+
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: start;
+            flex-direction: column;
+
+            &__text {
+                font-size: 16px;
+                font-weight: 500;
+                font-family: 'Open Sans', sans-serif;
+                color: #7c7c7c;
+                margin-top: 25px;
+            }
+        }
+
+        &_sub-text {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            color: #7c7c7c;
+            margin-top: 25px;
+        }
+    }
+    .check-item {
+        list-style: none;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Open Sans', sans-serif;
+        color: #7c7c7c;
+        margin: 0;
+        padding: 0;
+        margin-top: 25px;
+    }
+    .check-list {
+        color: #000000;
+        margin: 0;
+        margin-top: 15px;
+    }
+    .check-icon {
+        margin-right: 10px;
+    }
+
+    // Особенности течения заболевания
+    .peculiarities {
+        border-bottom: 2px solid #7c7c7c;
+    }
+
+    // Опасность коронавируса
+    .danger {
+        border-bottom: 2px solid #7c7c7c;
+        padding-bottom: 25px;
+        &__text {
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            color: #7c7c7c;
+            margin: 0;
+            padding: 0;
+            margin-top: 25px;
+        }
+    }
+}
+
+
+.pass-analysis {
+    margin-top: 200px;
+
+    &-list {
+        margin-top: 40px;
+        &__text {
+            font-size: 16px;
+            font-weight: 500;
+            color: #7c7c7c;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 30px;
+        }
+    }
+}
+
+.analysis-detection {
+    margin-top: 200px;
+
+    .sup-text {
+        font-size: 16px;
+        font-weight: 700;
+        color: #111111;
+        font-family: 'Open Sans', sans-serif;
+    }
+    &-list__text{
+        font-size: 16px;
+        font-weight: 500;
+        color: #474747;
+        font-family: 'Open Sans', sans-serif;
+    }
+    &-list__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #474747;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 15px;
+
+        .list__tetx {
+            margin-top: 15px;
+        }
+        .list__img {
+            margin-right: 15px;
+        }
+    }
+}
+
+
+.shows-test {
+    margin: 200px 0;
+
+    &__title-text {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        color: #1a9f29;
+        font-family: 'Montserrat';
+        margin-bottom: 30px;
+    }
+    &__title-text-info {
+        font-size: 16px;
+        font-weight: 500;
+        color: #474747;
+        font-family: 'Montserrat';     
+    }
+
+    .shows-test_right-text {
+        font-size: 16px;
+        font-weight: 500;
+        color: #474747;
+        font-family: 'Montserrat';  
+    }
+}
+
+
+
+
+
+@import 'animate';
+@import 'media';
