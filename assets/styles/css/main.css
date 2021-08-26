@@ -419,4 +419,10 @@
   .shows-test__title-text {
     font-size: 20px;
   }
+  .symptoms-coronavirus-list {
+    text-align: center;
+  }
+  .symptoms-coronavirus-list__text {
+    text-align: center;
+  }
 }
