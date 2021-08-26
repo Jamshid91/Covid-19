@@ -10,7 +10,7 @@
 }
 
 .container {
-    min-width: 1140px;
+    max-width: 1140px !important;
     position: relative;
 }
 
@@ -267,6 +267,11 @@
         .list__img {
             margin-right: 15px;
         }
+    }
+    .mobile_show_text {
+    width: 100%;
+    border-bottom: 4px solid #7c7c7c;
+    margin-bottom: 15px;
     }
 }
 

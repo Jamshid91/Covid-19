@@ -62,7 +62,7 @@
 }
 
 .container {
-  min-width: 1140px;
+  max-width: 1140px !important;
   position: relative;
 }
 
@@ -375,6 +375,12 @@
   margin-right: 15px;
 }
 
+.analysis-detection .mobile_show_text {
+  width: 100%;
+  border-bottom: 4px solid #7c7c7c;
+  margin-bottom: 15px;
+}
+
 .shows-test {
   margin: 200px 0;
 }
@@ -402,4 +408,37 @@
   font-weight: 500;
   color: #474747;
   font-family: 'Montserrat';
+}
+
+@media screen and (max-width: 992px) {
+  .info-text {
+    height: 60px;
+    left: 0;
+  }
+  .covid-table .info-text {
+    top: -70px !important;
+  }
+  .covid-table-title__list {
+    width: 50%;
+    margin-top: 35px;
+  }
+  .mobile_show_text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info-text {
+    height: 50px;
+    left: 0;
+  }
+  .covid-table .info-text {
+    top: -70px !important;
+  }
+  .mobile_hide_text {
+    display: none;
+  }
+  .mobile_show_text {
+    display: block;
+  }
 }
