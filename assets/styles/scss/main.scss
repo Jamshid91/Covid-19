@@ -1,6 +1,4 @@
 @import 'font';
-@import 'color';
-@import 'mixin';
 
 
 *, :after, :before {
@@ -26,6 +24,10 @@
         font-family: "Montserrat";
     }
 
+    &_img {
+        margin-top: 20px;
+    }
+
     &__sub-text {
         margin-top: 20px;
         font-size: 16px;
@@ -35,37 +37,21 @@
     }
 }
 
-.info-text {
-    width: 355px;
-    height: 75px;
-    background-color: #ffff00;
-    position: absolute;
-    top: -80px;
-    left: -110px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000000;
-    font-family: 'Open Sans', sans-serif;
-    padding-left: 15px;
-}
-
-
 .line-sub {
     width: 100%;
     height: 4px;
     background-color: #7c7c7c;
     margin-bottom: 15px;
 }
+// АНАЛИЗЫ НА КОРОНАВИРУС COVID-19 И ИММУНИТЕТ
 .analysis {
     margin-top: 50px;
 }
 
+
+// Таблица ковид
 .covid-table {
-    margin-top: 115px;
-    margin-bottom: 100px;
+    margin-top: 200px;
     
     .info-text {
         top: -125px;
@@ -220,7 +206,7 @@
     }
 }
 
-
+// Когда и кому необходимо  анализ на антитела к коронавирусу
 .pass-analysis {
     margin-top: 200px;
 
@@ -236,6 +222,7 @@
     }
 }
 
+// КАКИЕ СУЩЕСТВУЮТ АНАЛИЗЫ ДЛЯ ВЫЯВЛЕНИЯ КОРОНАВИРУСА
 .analysis-detection {
     margin-top: 200px;
 
@@ -275,9 +262,10 @@
     }
 }
 
-
+// Что показывает тест на COVID-19
 .shows-test {
-    margin: 200px 0;
+    margin-top: 200px;
+    margin-bottom: 100px;
 
     &__title-text {
         list-style: none;
@@ -296,7 +284,8 @@
         font-family: 'Montserrat';     
     }
 
-    .shows-test_right-text {
+    .shows-test_right-text,
+    .shows-test_left-text {
         font-size: 16px;
         font-weight: 500;
         color: #474747;
@@ -305,8 +294,4 @@
 }
 
 
-
-
-
-@import 'animate';
 @import 'media';

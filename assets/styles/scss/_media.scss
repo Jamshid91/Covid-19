@@ -1,12 +1,16 @@
 
 // DESCTOP
 @media screen and(min-width:1025px) {
-    
+    .mobile_show_text {
+        display: none;
+    }
 }
 
 // TABLET
 @media screen and(max-width:1024px) {
-    
+    .mobile_show_text {
+        display: none;
+    }
 }
 
 
@@ -33,21 +37,24 @@
 
 
 @media screen and(max-width:767px) {
-    .info-text {
-        height: 50px;
-        left: 0;
-    }
-    .covid-table {
-        .info-text {
-            top: -70px !important;
-        }
-    }
     .mobile_hide_text {
         display: none;
     }
     .mobile_show_text {
         display: block;
     }
+    .analysis,
+    .covid-table,
+    .pass-analysis,
+    .analysis-detection,
+    .shows-test  {
+        margin-top: 100px;
+    }
+
+    .shows-test__title-text {
+        font-size: 20px;
+    }
+
 }
 
 // MOBILE
